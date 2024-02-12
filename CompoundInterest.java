@@ -13,7 +13,7 @@ public class CompoundInterest {
         System.out.print("Enter the time in year: ");
         int time = input.nextInt();
 
-        float calc = amt*(1+(float)rate/100)*time;
+        double calc = amt*Math.pow((1+(float)rate/100),time);
 
         System.out.println("Compound interest of given information is : "+calc);
 
