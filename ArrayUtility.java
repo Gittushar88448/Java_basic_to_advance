@@ -20,4 +20,13 @@ public class ArrayUtility {
 
     }
 
+    public static void printArray(int[] arr){
+        int i = 0;
+        while (i < arr.length){
+            System.out.print(arr[i] + " ");
+            i++;
+        }
+        System.out.println();
+    }
+
 }
