@@ -2,7 +2,7 @@ package com.abstraction;
 
 public class Circle extends Shape{
 
-    public double radii;
+    private double radii;
 
     public double getRadii() {
         return radii;
