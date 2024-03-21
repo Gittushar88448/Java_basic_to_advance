@@ -29,4 +29,20 @@ public class ArrayUtility {
         System.out.println();
     }
 
+    public static int[][] input2DArray() {
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the rows you want to add in array: ");
+        int num1 = input.nextInt();
+        System.out.print("Enter the columns you want to add in array: ");
+        int num2 = input.nextInt();
+        int[][] arr = new int[num1][num2];
+        for (int i = 0; i< num1;i++){
+            for (int j = 0; j < num2; j++){
+                arr[i][j] = input.nextInt();
+            }
+            System.out.println();
+        }
+        return arr;
+    }
 }
