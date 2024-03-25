@@ -13,6 +13,7 @@ public class ExceptionHandling {
 
         try{
             int result = num1/num2;
+            System.out.println(result);
 
         }catch (ArithmeticException exception){
             if(exception.getMessage().equals("/ by zero")){
@@ -26,6 +27,8 @@ public class ExceptionHandling {
     }
 
 
-
+    public static void main(String[] args) {
+        division();
+    }
 
 }
