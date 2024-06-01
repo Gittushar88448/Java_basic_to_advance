@@ -11,6 +11,10 @@ public class HelloThread extends Thread{
         return num;
     }
 
-
+    public void run(){
+        for(int i = 0; i < 10; i++){
+            System.out.printf("(%d) %s Hello from Thread %d\n", i+1,Thread.currentThread().getName(), num);
+        }
+    }
 
 }
